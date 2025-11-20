@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Pemesanan - Bibit Sawit</title>
+    <link rel="stylesheet" href="styling/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="img/sawit unggul.jpeg" class="header-img">
+        <div class="header-title">JUAL BIBIT SAWIT</div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="product.html" class="nav-link">Product</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="pemesanan.html" class="nav-link active">Info Pemesanan</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="section">
+        <h2>Formulir Pemesanan Bibit Sawit</h2>
+        <p>Silakan isi data di bawah ini untuk melakukan pemesanan bibit sawit.</p>
+
+        <form class="order-form">
+
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap" required>
+
+            <label>Nomor WhatsApp</label>
+            <input type="text" placeholder="0812-xxxx-xxxx" required>
+
+            <label>Alamat Lengkap</label>
+            <textarea rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+
+            <label>Pilih Jenis Bibit</label>
+            <select required>
+                <option value="">-- pilih bibit --</option>
+                <option value="PPKS">Bibit Sawit PPKS</option>
+                <option value="Topaz">Bibit Sawit Topaz</option>
+                <option value="DXP">DXP Unggul</option>
+            </select>
+
+            <label>Jumlah Pembelian (batang)</label>
+            <input type="number" min="1" placeholder="Contoh: 50" required>
+
+            <label>Metode Pengambilan</label>
+            <select>
+                <option value="pickup">Ambil di tempat</option>
+                <option value="delivery">Dikirim ke alamat</option>
+            </select>
+
+            <button type="submit" class="btn-submit">Kirim Pemesanan</button>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 Bibit Sawit Unggul</p>
+    </footer>
+
+</body>
+</html>
